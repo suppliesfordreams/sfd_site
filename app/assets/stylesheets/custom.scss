@@ -235,7 +235,7 @@ footer a:hover {
 }
 .home {
   height: 600px;
-  background: url(/assets/home.png);
+  background-image: image-url("home.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: -2 !important;
@@ -309,7 +309,7 @@ footer a:hover {
 
 /** Donate **/
 #donate-banner {
-  background: url('/assets/sfd_student_1.jpg');
+  background-image: image-url("sfd_student_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 76px;
