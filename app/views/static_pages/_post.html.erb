@@ -1,0 +1,10 @@
+<div class="card shadow">
+  <%= image_tag(post.featured_image, :class => "img_preview") if post.featured_image %>
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold"><%= link_to post.title, buttercms_post_path(post.slug), :title => post.title %></h5>
+  </div>
+  <div class="card-footer">
+    <%= link_to(raw("Read story <i class='fas fa-arrow-right'></i>"), buttercms_post_path(post.slug)) %>
+  </div>
+</div>
+

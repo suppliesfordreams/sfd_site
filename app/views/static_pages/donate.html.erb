@@ -1,0 +1,50 @@
+<% provide(:title, "Donate | Supplies for Dreams") %>
+<section id="donate-banner">
+  <div class="container py-6">
+    <div class="row">
+      <div class="offset-md-7 col-md-5 col-12">
+        <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/supplies-for-dreams" height="685px" width="100%" style="max-width:700px; min-width:310px; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="donate-content">
+  <div class="py-6">
+    <div class="container">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card shadow">
+            <div class="card-body">
+              <i class="far fa-large fa-lightbulb"></i>
+              <h5 class="card-title font-weight-bold">Maximize your donation</h5>
+              <p class="card-text">We maximize your donation by operating under a student-lead model. </p>
+            </div>
+            <div class="card-footer">
+              <%= link_to 'Learn more about our model <i class="fas fa-arrow-right"></i>'.html_safe, about_path %>
+            </div>
+          </div>
+          <div class="card shadow">
+            <div class="card-body">
+              <i class="far fa-large fa-file-alt"></i>
+              <h5 class="card-title font-weight-bold">View our financials</h5>
+              <p class="card-text">We are committed to accountability and transparency.</p>
+            </div>
+            <div class="card-footer">
+              <%= link_to 'View our financials <i class="fas fa-arrow-right"></i>'.html_safe, resources_path %>
+            </div>
+          </div>
+          <div class="card shadow">
+            <div class="card-body">
+              <i class="fab fa-large fa-acquisitions-incorporated"></i>
+              <h5 class="card-title font-weight-bold">Give by check or stock</h5>
+              <p class="card-text">We also accept donations by check, stock, and wire transfer.</p>
+            </div>
+            <div class="card-footer">
+              <%= link_to 'Learn more <i class="fas fa-arrow-right"></i>'.html_safe, '/' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

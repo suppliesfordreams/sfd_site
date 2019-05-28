@@ -1,0 +1,31 @@
+<% provide(:title, "Programs | Supplies for Dreams") %>
+<section id="programs-video">
+  <div class="container py-6">
+    <div class="row">
+      <div class="col-md-6 col-12" style="padding-left: 0px !important;padding-right: 0px !important;">
+        <img src="/assets/students_1.png" style="width: 100%;">
+      </div>
+      <div class="col-md-6 col-12 bg-dark-blue text-center" style="padding: 60px !important;">
+        <h4 class="text-white pb-4">To date, our programs have provided more than 10,000 students with rich extracurricular opportunities and more than 15,000 students with backpacks and school supplies.</h4>
+        <p style="font-size: 0.9rem;">Sponsored by Ink Factory</p>
+        <a href="https://www.youtube.com/watch?v=_hcaAvFnCfE" class="btn btn-primary btn-white" target="_blank"><i class="far fa-play-circle"></i> Play Our Video</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="programs-stories">
+  <div class="container py-6">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="pb-4">Stories From Our Schools</h1>
+      </div>
+      <div class="col-12">
+        <div class="card-deck">
+          <% @posts.take(3).each do |post| %>
+            <%= render :partial => 'post', :locals => {:post => post} %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

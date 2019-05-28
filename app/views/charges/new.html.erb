@@ -1,0 +1,65 @@
+
+<h1>Charges#new</h1>
+<p>Find me in app/views/charges/new.html.erb</p>
+<%= form_tag charges_path, :class => 'donation-form' do %>
+  <div id="error_explanation">
+    <% if flash[:error].present? %>
+      <p><%= flash[:error] %></p>
+    <% end %>
+  </div>
+  <article>
+    <%= text_field_tag :amount, "", :value => '50' %>
+    <span class="preinput" data-reactid="4">$</span>
+  </article>
+  <article>
+    <%= hidden_field_tag(:stripeToken) %>
+  </article>
+  <article>
+    <%= hidden_field_tag(:stripeEmail) %>
+  </article>
+  <button id='donateButton' class="btn-primary btn-donate">Donate</button>
+  <div class="donate-check"><a href="http://www.suppliesfordreams.org/about-us/contact/" target="_blank">Give by Check or Cash</a></div>
+<% end %>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: '<%= Rails.configuration.stripe[:publishable_key] %>',
+    locale: 'auto',
+    name: 'Supplies for Dreams',
+    image: 'https://s3.amazonaws.com/stripe-uploads/acct_15DO9aI7lB90VBFAmerchant-icon-1419463408487-logo-1.png',
+    description: 'Donation',
+    billingAddress: 'true',
+    token: function(token) {
+      $('input#stripeToken').val(token.id);
+      $("input#stripeEmail").val(token.email);
+      $('form').submit();
+    }
+  });
+  
+  $('#donateButton').on('click', function(e) {
+    e.preventDefault();
+  
+    $('#error_explanation').html('');
+  
+    var amount = $('input#amount').val();
+    amount = amount.replace(/\$/g, '').replace(/\,/g, '')
+  
+    amount = parseFloat(amount);
+  
+    if (isNaN(amount)) {
+      $('#error_explanation').html('<p>Please enter a valid amount in USD ($).</p>');
+    }
+    else if (amount < 5.00) {
+      $('#error_explanation').html('<p>Donation amount must be at least $5.</p>');
+    }
+    else {
+      amount = amount * 100; // Needs to be an integer!
+      handler.open({
+        amount: Math.round(amount)
+      })
+    }
+  });
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>

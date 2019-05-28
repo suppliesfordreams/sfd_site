@@ -1,0 +1,28 @@
+<header>
+  <% if current_page?(schools_path) || current_page?(resources_path) %>
+  <nav class="navbar navbar-expand-md shadow-nav navbar-transparent shadow-nav">
+  <% else %>
+  <nav class="navbar navbar-expand-md fixed-top bg-white shadow-nav navbar-light">
+  <% end %>
+    <div class="container d-flex justify-content-between">
+      <%= link_to image_tag("sfd_logo.jpg", alt: "Supplies for Dreams logo", class: "nav-logo"), '/' %>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <%= link_to "Why CPS", '#', class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Our Programs", programs_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About Us", about_path, class: "nav-link" %>
+          </li>
+        </ul>
+        <a href="/donate"><button class="btn btn-red my-2 my-sm-0" type="submit">DONATE</button></a>
+      </div>
+    </div>
+  </nav>
+</header>
