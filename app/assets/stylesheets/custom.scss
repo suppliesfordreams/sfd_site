@@ -122,6 +122,10 @@ footer a:hover {
   transition: color 300ms ease-in-out;
   text-decoration: underline;
 }
+footer .fab {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
 
 /** Backgrounds **/
 .bg-blue {
@@ -322,6 +326,9 @@ footer a:hover {
 
 
 /** Resources **/
+#resources-title {
+  margin-top: 76px;
+}
 #resources-content p {
   margin-bottom: 0;
 }
