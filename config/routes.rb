@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   
   get '/resources', to: 'static_pages#resources'
   
+  get '/thanks', to: 'static_pages#thanks'
+  
   get '/blog', to: 'buttercms#blog'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

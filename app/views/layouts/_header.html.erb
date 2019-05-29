@@ -1,9 +1,5 @@
 <header>
-  <% if current_page?(schools_path) %>
-  <nav class="navbar navbar-expand-md shadow-nav navbar-transparent shadow-nav">
-  <% else %>
   <nav class="navbar navbar-expand-md fixed-top bg-white shadow-nav navbar-light">
-  <% end %>
     <div class="container d-flex justify-content-between">
       <%= link_to image_tag("sfd_logo.jpg", alt: "Supplies for Dreams logo", class: "nav-logo"), '/' %>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

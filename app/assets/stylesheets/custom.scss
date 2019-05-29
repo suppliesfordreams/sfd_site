@@ -296,18 +296,9 @@ footer .fab {
 
 /** Schools **/
 #schools-title {
-  background: #1b3451 !important;
-}
-.schools {
-  margin-top: 60px;
+  background: #02336c !important;
+  margin-top: 76px;
   color: #FFFFFF !important;
-}
-#schools-content .stripes {
-  display: grid;
-  grid: repeat(5, 80px) / repeat(10, 1fr);
-  background: #FFFFFF !important;
-  z-index: 0;
-  transform: skewY(-4deg) !important;
 }
 
 
@@ -324,6 +315,11 @@ footer .fab {
   margin-bottom: 30px;
 }
 
+
+/** Thanks **/
+#thanks {
+  margin-top: 76px;
+}
 
 /** Resources **/
 #resources-title {
