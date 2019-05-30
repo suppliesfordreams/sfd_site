@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title><%= content_for?(:html_title) ? "#{content_for(:html_title)} | My Blog" : "My Blog" %></title>
-
-    <meta name="description" content="<%= content_for?(:meta_description) ? content_for(:meta_description) : "My Blog" %>">
-
-    <link rel="alternate" type="application/atom+xml" title="My Blog - Atom" href="<%= buttercms_blog_atom_path %>">
-    <link rel="alternate" type="application/rss+xml" title="My Blog - RSS" href="<%= buttercms_blog_rss_path %>">
-
-    <!-- See https://buttercms.com/docs/#cssstyling -->
-    <link rel="stylesheet" href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css">
-</head>
-<body>
-    <div>
-      <%= link_to "Blog home", buttercms_blog_path %>
-    </div>
-
+  <head>
+    <title><%= yield(:title) %> | Supplies for Dreams</title>
+    <%= csrf_meta_tags %>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <%= favicon_link_tag asset_path('sfd_favicon.png') %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
     <%= yield %>
-</body>
+    <%= render 'layouts/footer' %>
+  </body>
 </html>

@@ -78,14 +78,13 @@ a:hover, a:focus {
   padding: .5rem 1.0rem;
 }
 .navbar-transparent {
-  background: transparent !important;
-  color: #FFFFFF !important;
+  background: transparent;
 }
 .nav-link {
   color: #333333 !important;
   font-size: 1.1rem;
 }
-.navbar-transparent .nav-link {
+.navbar-dark .nav-link {
   color: #FFFFFF !important;
 }
 @media (min-width: 768px) {
@@ -323,7 +322,7 @@ footer .fab {
 
 /** Resources **/
 #resources-title {
-  margin-top: 76px;
+  padding-top: 76px;
 }
 #resources-content p {
   margin-bottom: 0;
@@ -416,10 +415,20 @@ footer .fab {
 
 /** Programs **/
 #programs-banner {
-  margin-top: 76px;
+  padding-top: 76px;
 }
 #programs-video {
   background: #f5f5fc;
+}
+.underline:after {
+  background: #4781c2;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  height: 4px;
+  width: 96px;
 }
 
 
@@ -429,4 +438,12 @@ footer .fab {
 }
 .contact-hidden {
   display: none;
+}
+
+/** Blog **/
+#blog-title {
+  margin-top: 76px;
+}
+#blog-content .card {
+  min-width: 340px;
 }

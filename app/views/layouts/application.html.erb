@@ -13,22 +13,48 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <%= favicon_link_tag asset_path('sfd_favicon.png') %>
   </head>
-
   <body>
     <%= render 'layouts/header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
     <script>
       $(function(){
-          var navbar = $('.navbar');
+          var navbar = $('.navbar-white');
           $(window).scroll(function(){
-              if($(window).scrollTop() <= 76){
+              if($(window).scrollTop() <= 30){
              		navbar.css('box-shadow', 'none');
              		navbar.css('background-color', 'transparent');
               } else {
                 navbar.css('box-shadow', '0 8px 24px rgba(0,0,0,.13)'); 
                 navbar.css('background-color', '#FFFFFF');
+              }
+          });  
+      })
+      $(function(){
+          var navbar1 = $('.navbar-transparent');
+          $(window).scroll(function(){
+              if($(window).scrollTop() <= 30){
+             		navbar1.css('box-shadow', 'none');
+             		navbar1.css('background-color', 'transparent');
+              } else {
+                navbar1.css('box-shadow', '0 8px 24px rgba(0,0,0,.13)'); 
+                navbar1.css('background-color', '#FFFFFF');
+                navbar1.css('opacity', '0.95');
+              }
+          });  
+      })
+      $(function(){
+          var navbar2 = $('.navbar-dark');
+          $(window).scroll(function(){
+              if($(window).scrollTop() <= 30){
+             		navbar2.css('box-shadow', 'none');
+             		navbar2.css('background-color', 'transparent');
+              } else {
+                navbar2.css('box-shadow', '0 8px 24px rgba(0,0,0,.13)'); 
+                navbar2.css('background-color', '#02336c');
+                navbar2.css('opacity', '0.95');
               }
           });  
       })
