@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'contacts/new'
+
   scope :module => 'buttercms' do
     get '/categories/:slug' => 'categories#show', :as => :buttercms_category
     get '/author/:slug' => 'authors#show', :as => :buttercms_author
@@ -21,8 +23,8 @@ Rails.application.routes.draw do
   get '/about', to: 'static_pages#about'
 
   get '/donate', to: 'static_pages#donate'
-
-  get '/contact', to: 'static_pages#contact'
+  
+  resources :contacts, only: [:new, :create]
 
   get '/programs', to: 'static_pages#programs'
   
