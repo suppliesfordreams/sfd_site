@@ -25,6 +25,8 @@ Rails.application.routes.draw do
   get '/donate', to: 'static_pages#donate'
   
   resources :contacts, only: [:new, :create]
+  
+  get '/contacts/thanks', to: 'contacts#thanks'
 
   get '/programs', to: 'static_pages#programs'
   
