@@ -56,8 +56,6 @@
   </div>
 </section>
 <section id="home-impact">
-  <div class="stripes">
-  </div>
   <div class="impact py-6">
     <div class="container">
       <div class="row">
@@ -75,7 +73,7 @@
   <div class="aaft py-6">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12 mobile-pb-4">
           <div class="card shadow">
             <%= link_to image_tag("sfd_student_1.jpg", alt: "SFD student", class: "card-img-top") %>
             <div class="card-body">
@@ -93,19 +91,17 @@
     </div>
   </div>
 </section>
-<section id="home-stories">
-  <div class="py-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="pb-4">Stories From Our Schools</h1>
-        </div>
-        <div class="col-12">
-          <div class="card-deck">
-            <% @posts.take(3).each do |post| %>
-              <%= render :partial => 'post', :locals => {:post => post} %>
-            <% end %>
-          </div>
+<section id="home-stories">=
+  <div class="container py-6">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="pb-4">Stories From Our Schools</h1>
+      </div>
+      <div class="col-12">
+        <div class="card-deck">
+          <% @posts.take(3).each do |post| %>
+            <%= render :partial => 'post', :locals => {:post => post} %>
+          <% end %>
         </div>
       </div>
     </div>
