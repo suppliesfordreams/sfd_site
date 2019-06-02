@@ -279,6 +279,15 @@ footer .fab {
   transform: skewY(4deg);
   z-index: 0;
 }
+@media only screen and (max-width: 768px) {
+  #home-chicago .stripes {
+  display: grid;
+  grid: repeat(5, 220px) / repeat(10, 1fr);
+  background: #02336c !important;
+  transform: skewY(4deg);
+  z-index: 0;
+}
+}
 #home-aaft .stripes {
   display: grid;
   grid: repeat(5, 150px) / repeat(10, 1fr);
