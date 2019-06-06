@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   get '/about', to: 'static_pages#about'
+  
+  get '/why', to: 'static_pages#why'
 
   get '/donate', to: 'static_pages#donate'
   
