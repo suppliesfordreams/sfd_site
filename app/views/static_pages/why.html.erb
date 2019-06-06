@@ -1,106 +1,54 @@
 <% provide(:title, "Why CPS") %>
-<section id="about-title">
-  <div class="py-6">
-    <div class="container">
-      <div class="row text-center">
-        <div class="offset-md-2 col-md-8 col-12">
-          <h1>Our Mission is to Equalize Learning Opportunities</h1>
-          <p class="p-large pt-4">We see a world where the opportunity to learn and achieve is not determined by a person’s neighborhood or class, but by that individual’s passion and persistence for learning. Supplies for Dreams partners with local universities to provide Chicago Public Schools students with basic resources and extracurricular opportunities.</p>
-        </div>
+<section id="why-title" class="bg-dark-blue">
+  <div class="container py-6">
+    <div class="row text-center">
+      <div class="offset-md-1 col-md-10 col-12">
+        <h1 class="pb-4 text-white">3 in 4 Chicago Public schools students are economically disadvantaged</h1>
+        <p class="p-large text-white">The combination of an under-resourced school district and struggling families results in some startling systemic failures. 21.8 percent of CPS students will never graduate from high school, and only 63 percent of the high school graduates will attend college.</p>
       </div>
     </div>
   </div>
 </section>
-<section id="about-principles" class="bg-grey">
+<section id="why-news">
   <div class="container py-6">
-    <div class="row">
-      <div class="col-md-6 col-12">
-        <h1 class="pb-4">Our Principles</h1>
-        <h5 class="font-weight-bold">Focus on core competencies</h5>
-          <p class="pb-4">We invest in our strengths and partner with other organizations where we lack expertise. Increase funding for programs focused on providing rich extra-curricular experiences.</p>
-          <h5 class="font-weight-bold">Increase investment in technology</h5>
-          <p class="pb-4">We actively explore technologies that can help students better engage with educational content and enhance extra-curricular experiences.</p>
-          <h5 class="font-weight-bold">Leverage Chicago universities and colleges</h5>
-          <p>We believe in the power of university and college students to make a difference in their communities. We currently operate at Northwestern University, Loyola University and University of Chicago with plans to expand further.</p>
+    <div class="row pb-6">
+      <div class="offset-md-1 col-md-4 col-12">
+        <div class="card shadow">
+          <div class="card-body">
+            <p class="p-large">"First day of school, more than half of my kids didn't have a backpack and almost all of them came without supplies. I have students who have never even seen downtown."</p>
+          </div>
+          <div class="card-footer bg-blue text-center">
+            <%= image_tag("elizabethmoss.png", class: "card-img") %>
+            <p>Elizbaeth Moss, Teacher</p>
+          </div>
+        </div>
       </div>
+      <div class="offset-md-1 col-md-6 col-12 align-self-center">
+        <h2 class="pb-5 underline">Students Lack Resources</h2>
+        <p>Many students lack access to basic resources including school supplies and to opportunities such as rich after school programs, trips to museums, and mentorship. Yet success in school is a direct link to success later in life with more steady employment, greater wages and higher self-confidence.</p>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-6 col-12 align-self-center">
-        <div class="spotlight-circles">
-        <div class="spotlight-circles-interior">
-          <div class="spotlight-circles-content">
-            <p class="spotlight-circles-content__heading">By 2020, we will be supporting <strong>10,000 students</strong> annually in a dozen schools.</p>
-          </div>
-        </div>
+        <h2 class="pb-5 underline">Headlines Tell the Story</h2>
+        <p>Over the past decade, dozens of schools have closed, enrollment has decreased, students experienced millions of dollars in budget cuts, and funding for after school programs were cut.</p>
       </div>
+      <div class="col-md-6 col-12">
+        <%= image_tag("why_news.png", style: "width: 100%;") %>
       </div>
     </div>
   </div>
 </section>
-<section id="about-partners">
+<section id="why-video">
   <div class="container py-6">
     <div class="row">
-      <div class="offset-md-2 col-md-8 col-12 text-center">
-        <h1>Our Partners</h1>
-        <p class="p-large py-4">Our work would not be possible without the generous support of our partner organizations.</p>
+      <div class="col-md-6 col-12" style="padding-left: 0px !important;padding-right: 0px !important;">
+        <%= link_to image_tag("stacy.jpg", alt: "Stacy Stewart", style: "width: 100%;") %>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2 col-4 align-self-center">
-        <%= link_to image_tag("nu_logo.png", alt: "NU logo") %>
-      </div>
-      <div class="col-md-2 col-4 align-self-center">
-        <%= link_to image_tag("loyola_logo.png", alt: "Loyola logo") %>
-      </div>
-      <div class="col-md-2 col-4 align-self-center">
-        <%= link_to image_tag("uc_logo.png", alt: "UC logo") %>
-      </div>
-            <div class="col-md-2 col-4 align-self-center">
-        <%= link_to image_tag("f4d_logo.png", alt: "F4D logo") %>
-      </div>
-      <div class="col-md-2 col-4 align-self-center">
-        <%= link_to image_tag("cis_logo.png", alt: "CIS logo") %>
-      </div>
-      <div class="col-md-2 col-4 align-self-center">
-        <%= link_to image_tag("cc_logo.png", alt: "CC logo") %>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="about-card">
-  <div class="container py-6">
-    <div class="row">
-      <div class="col-12 col-md-12">
-        <div class="card-deck">
-          <div class="card shadow">
-            <div class="card-body">
-              <i class="fas fa-large fa-hands"></i>
-              <h5 class="card-title font-weight-bold">Volunteering opportunities</h5>
-              <p>We're always on the look for new and eager volunteers. Come on a field trip with our students.</p>
-            </div>
-            <div class="card-footer">
-              <%= link_to(raw("Learn more <i class='fas fa-arrow-right'></i>"), contacts_new_path) %>
-            </div>
-          </div>
-          <div class="card shadow">
-            <div class="card-body">
-              <i class="far fa-large fa-paper-plane"></i>
-              <h5 class="card-title font-weight-bold">Contact us</h5>
-              <p>Got a question about Supplies for Dreams? Send us an email and we will respond within 48 hours.</p>
-            </div>
-            <div class="card-footer">
-              <%= link_to(raw("Email us <i class='fas fa-arrow-right'></i>"), contacts_new_path) %>
-            </div>
-          </div>
-          <div class="card shadow">
-            <div class="card-body">
-              <i class="far fa-large fa-file-alt"></i>
-              <h5 class="card-title font-weight-bold">Annual reports</h5>
-              <p>We are committed to accountability and transparency. Read our annual reports and view our financials.</p>
-            </div>
-            <div class="card-footer">
-              <%= link_to(raw("Read more <i class='fas fa-arrow-right'></i>"), resources_path) %>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-6 col-12 bg-dark-blue text-center" style="padding: 60px !important;">
+        <h4 class="text-white pb-4">"Our children are dealing with the violence in our community where you don't know if someone is going to violate your home, or you don't know if you're going to be challenged on the street by a gang member."</h4>
+        <p style="font-size: 1.0rem;" class="pb-4">Stacy Stewart, Principal at Belmont Cragin Elementary</p>
+        <a href="https://www.youtube.com/watch?v=PM2J8N46z-A" class="btn btn-primary btn-white" target="_blank"><i class="far fa-play-circle"></i> Hear Stacy's perspective</a>
       </div>
     </div>
   </div>

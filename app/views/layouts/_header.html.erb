@@ -1,13 +1,13 @@
 <header>
   <% if current_page?(resources_path) %>
   <nav class="navbar navbar-expand-md fixed-top navbar-transparent navbar-light">
-  <% elsif current_page?(programs_path) %>
+  <% elsif current_page?(programs_path) || current_page?(why_path) %>
   <nav class="navbar navbar-expand-md fixed-top navbar-transparent navbar-dark">
   <% else %>
   <nav class="navbar navbar-expand-md fixed-top navbar-white navbar-light">
   <% end %>
     <div class="container d-flex justify-content-between">
-      <% if current_page?(programs_path) %>
+      <% if current_page?(programs_path) || current_page?(why_path) %>
       <%= link_to image_tag("sfd_logo_white.png", alt: "Supplies for Dreams logo", class: "nav-logo"), '/' %>
       <% else %>
       <%= link_to image_tag("sfd_logo.png", alt: "Supplies for Dreams logo", class: "nav-logo"), '/' %>

@@ -472,6 +472,26 @@ footer .fab {
 }
 
 
+/** Why CPS **/
+#why-title {
+  padding-top: 76px;
+}
+#why-news .card-body {
+  padding-bottom: 50px;
+}
+#why-news .card-footer {
+  position: relative;
+  padding-top: 70px;
+}
+#why-news .card-img {
+  border-radius: 50%;
+  position: absolute;
+  max-width: 100px;
+  top: -50px;
+  margin-left: -50px;
+  left: 50%;
+}
+
 /** Contact **/
 #contacts-content {
   margin-top: 76px;
