@@ -476,18 +476,7 @@ footer .fab {
   height: 4px;
   width: 96px;
 }
-@media only screen and (max-width: 768px) {
-  #why-news .underline:after {
-  background: #4781c2;
-  content: "";
-  display: block;
-  position: absolute;
-  left: 30px;
-  top: 100px;
-  height: 4px;
-  width: 96px;
-  }
-}
+
 
 
 /** Why CPS **/
@@ -509,6 +498,25 @@ footer .fab {
   margin-left: -50px;
   left: 50%;
 }
+@media only screen and (max-width: 768px) {
+  #why-news .underline:after {
+  background: #4781c2;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  height: 4px;
+  width: 96px;
+  }
+  #why-video .video {
+  padding: 15px !important;
+  }
+}
+#why-video .video {
+  padding: 60px !important;
+}
+
 
 /** Contact **/
 #contacts-content {
