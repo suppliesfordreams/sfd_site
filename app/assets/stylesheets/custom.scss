@@ -55,6 +55,9 @@ a:hover, a:focus {
   padding-right: 30px !important;
   padding-left: 30px !important;
 }
+.video {
+  padding: 60px !important;
+}
 @media (min-width: 1200px) {
 .container {
     max-width: 1140px !important;
@@ -75,6 +78,9 @@ a:hover, a:focus {
   }
   .mobile-pt-4 {
     padding-top: 1.5rem!important;
+  }
+  .video {
+  padding: 60px 30px 60px 30px !important;
   }
 }
 
@@ -506,7 +512,7 @@ footer .fab {
   margin-left: -50px;
   left: 50%;
 }
-#why-video .video {
+.video {
   padding: 60px !important;
 }
 @media only screen and (max-width: 768px) {
@@ -520,7 +526,7 @@ footer .fab {
   height: 4px;
   width: 96px;
   }
-  #why-video .video {
+  .video {
   padding: 60px 30px 60px 30px !important;
   }
 }
