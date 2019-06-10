@@ -498,6 +498,9 @@ footer .fab {
   margin-left: -50px;
   left: 50%;
 }
+#why-video .video {
+  padding: 60px !important;
+}
 @media only screen and (max-width: 768px) {
   #why-news .underline:after {
   background: #4781c2;
@@ -513,9 +516,7 @@ footer .fab {
   padding: 15px !important;
   }
 }
-#why-video .video {
-  padding: 60px !important;
-}
+
 
 
 /** Contact **/
