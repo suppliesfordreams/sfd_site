@@ -292,6 +292,10 @@ footer .fab {
 #home-stories {
   background: #fff;
 }
+#home-stories .card {
+  min-width: 340px;
+  max-width: 340px;
+}
 .card-footer a {
   color: #4781c2;
   font-weight: bold;
@@ -548,7 +552,9 @@ footer .fab {
 /** Blog **/
 #blog-title {
   margin-top: 76px;
+  color: #FFFFFF !important;
 }
 #blog-content .card {
   min-width: 340px;
+  max-width: 340px;
 }

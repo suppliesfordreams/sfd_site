@@ -1,48 +1,25 @@
 <%= content_for :html_title, @post.seo_title %>
 <%= content_for :meta_description, @post.meta_description %>
-
-<!-- Post title -->
-<h2><%= @post.title %></h2>
-
-<!-- Post author -->
-<p>
-  <%= link_to "#{@post.author.first_name} #{@post.author.last_name}", buttercms_author_path(@post.author.slug) %>
-</p>
-
-<!-- Post categories -->
-<% @post.categories.each do |category| %>
-  <%= link_to category.name, buttercms_category_path(category.slug), :title => category.name %>
-<% end %>
-
-<!-- Publish date -->
-<p><%= Time.parse(@post.published).strftime('%B %d, %Y') %></p>
-
-<!-- Post body -->
-<%= @post.body.html_safe %>
-
-<!-- Link to Next Post -->
-<% if @next_post %>
-  <%= link_to @next_post.title, buttercms_post_path(@next_post.slug), :title => @next_post.title %>
-<% end %>
-
-<!--
-// For sharing, we recommend https://www.addthis.com/get/sharing or https://sumome.com/app/share
--->
-
-<!--
-// For commenting, we recommend https://disqus.com/
-// Create a Disqus account and paste your snippet below
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'XXXXXXXX';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
--->
+<% provide(:title, "Blog") %>
+<section id="blog-title">
+  <div class="container pt-6 pb-3">
+    <div class="row">
+      <div class="offset-md-2 col-md-8 col-12">
+        <!-- Post title -->
+        <h1 class="pb-2"><%= @post.title %></h1>
+        <!-- Post date and author -->
+        <p>Posted on <%= Time.parse(@post.published).strftime('%B %d, %Y') %> by <%= link_to "#{@post.author.first_name} #{@post.author.last_name}", buttercms_author_path(@post.author.slug) %></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="blog-content">
+  <div class="container pb-6">
+    <div class="row">
+      <div class="offset-md-2 col-md-8 col-12">
+        <!-- Post body -->
+        <%= @post.body.html_safe %>
+      </div>
+    </div>
+  </div>
+</section>

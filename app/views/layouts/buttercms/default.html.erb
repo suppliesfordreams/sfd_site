@@ -19,5 +19,48 @@
     <%= render 'layouts/header' %>
     <%= yield %>
     <%= render 'layouts/footer' %>
+    <script>
+      $(function(){
+          var navbar = $('.navbar-white');
+          $(window).scroll(function(){
+              if($(window).scrollTop() <= 30){
+             		navbar.css('box-shadow', 'none');
+             		navbar.css('background-color', '#FFFFFF');
+              } else {
+                navbar.css('box-shadow', '0 8px 24px rgba(0,0,0,.13)'); 
+                navbar.css('background-color', '#FFFFFF');
+              }
+          });  
+      })
+      $(function(){
+          var navbar1 = $('.navbar-transparent');
+          $(window).scroll(function(){
+              if($(window).scrollTop() <= 30){
+             		navbar1.css('box-shadow', 'none');
+             		navbar1.css('background-color', 'transparent');
+              } else {
+                navbar1.css('box-shadow', '0 8px 24px rgba(0,0,0,.13)'); 
+                navbar1.css('background-color', '#FFFFFF');
+                navbar1.css('opacity', '0.95');
+              }
+          });  
+      })
+      $(function(){
+          var navbar2 = $('.navbar-dark');
+          $(window).scroll(function(){
+              if($(window).scrollTop() <= 30){
+             		navbar2.css('box-shadow', 'none');
+             		navbar2.css('background-color', '#02336c');
+              } else {
+                navbar2.css('box-shadow', '0 8px 24px rgba(0,0,0,.13)'); 
+                navbar2.css('background-color', '#02336c');
+                navbar2.css('opacity', '0.95');
+              }
+          });  
+      })
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
