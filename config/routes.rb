@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   
   get '/thanks', to: 'static_pages#thanks'
   
+  get '/recruitment', to: 'static_pages#recruitment'
+  
   get '/blog', to: 'buttercms#blog'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

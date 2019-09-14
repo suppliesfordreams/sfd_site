@@ -27,4 +27,7 @@ class StaticPagesController < ApplicationController
   
   def thanks
   end
+  
+  def recruitment
+  end
 end
