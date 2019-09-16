@@ -560,24 +560,8 @@ footer .fab {
 }
 
 /** Recruitment **/
-#recruitment-card .stripes {
-  display: grid;
-  grid: repeat(5, 100px) / repeat(10, 1fr);
-  background: #02336c !important;
-  transform: skewY(-4deg);
-  z-index: 0;
-}
-@media only screen and (max-width: 768px) {
-  #recruitment-card .stripes {
-  display: grid;
-  grid: repeat(5, 160px) / repeat(10, 1fr);
-  background: #02336c !important;
-  transform: skewY(-4deg);
-  z-index: 0;
-  }
-}
-#recruitment-logos {
-  padding-bottom: 80px;
+#recruitment-title {
+  padding-top: 76px;
 }
 #recruitment-logos img {
   width: 100%;
@@ -586,21 +570,8 @@ footer .fab {
   width: 1.0rem;
   padding-bottom: 4px;
 }
-.job-pic {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.job-pic-img {
   width: 100%;
   height: 100%;
-  transform: skewY(-4deg);
-  transform-origin: 0 100%;
-}
-.job-pic-img {
-  transform-origin: 0 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border-radius: .25rem;
-  height: var(--image-height);
+  border-radius: 0.25rem;
 }
