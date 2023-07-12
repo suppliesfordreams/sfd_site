@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby "3.1.4"
+ruby "2.7.8"
 
-gem 'rails',        '7.0.6'
+gem 'rails',        '5.2'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
