@@ -1,0 +1,779 @@
+/** Globals **/
+/* line 2, app/assets/stylesheets/custom.scss */
+body {
+  color: #626a70;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.75rem;
+}
+
+/* line 8, app/assets/stylesheets/custom.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik', sans-serif;
+  color: #212b35;
+}
+
+/* line 12, app/assets/stylesheets/custom.scss */
+.text-white {
+  color: #FFFFFF;
+}
+
+/* line 15, app/assets/stylesheets/custom.scss */
+p {
+  font-size: 1.1rem;
+}
+
+/* line 18, app/assets/stylesheets/custom.scss */
+.p-large {
+  font-size: 1.3rem;
+}
+
+/* line 21, app/assets/stylesheets/custom.scss */
+a {
+  color: #333333;
+}
+
+/* line 24, app/assets/stylesheets/custom.scss */
+a:hover, a:focus {
+  color: #333333;
+  text-decoration: underline;
+}
+
+/* line 28, app/assets/stylesheets/custom.scss */
+.page-body {
+  padding-top: 56px;
+}
+
+/* line 31, app/assets/stylesheets/custom.scss */
+.card {
+  border: 0 !important;
+}
+
+/* line 34, app/assets/stylesheets/custom.scss */
+.card-footer {
+  background: #FFFFFF;
+  border: 0;
+  padding: 0 1.25rem .75rem 1.25rem;
+}
+
+/* line 39, app/assets/stylesheets/custom.scss */
+.shadow {
+  box-shadow: 0 5px 20px 0 rgba(69, 79, 91, 0.2) !important;
+}
+
+/* line 42, app/assets/stylesheets/custom.scss */
+.green {
+  color: #47c288;
+}
+
+/** Spacing **/
+/* line 48, app/assets/stylesheets/custom.scss */
+.pb-6, .py-6 {
+  padding-bottom: 5.0rem;
+}
+
+/* line 51, app/assets/stylesheets/custom.scss */
+.pt-6, .py-6 {
+  padding-top: 5.0rem;
+}
+
+/* line 54, app/assets/stylesheets/custom.scss */
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+
+/* line 58, app/assets/stylesheets/custom.scss */
+.video {
+  padding: 60px !important;
+}
+
+@media (min-width: 1200px) {
+  /* line 62, app/assets/stylesheets/custom.scss */
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 67, app/assets/stylesheets/custom.scss */
+  .mobile-pb {
+    padding-bottom: 1.0rem;
+  }
+  /* line 70, app/assets/stylesheets/custom.scss */
+  .mobile-pb-6 {
+    padding-bottom: 4.0rem;
+  }
+  /* line 73, app/assets/stylesheets/custom.scss */
+  .mobile-pt-6 {
+    padding-top: 4.0rem;
+  }
+  /* line 76, app/assets/stylesheets/custom.scss */
+  .mobile-pb-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 79, app/assets/stylesheets/custom.scss */
+  .mobile-pt-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 82, app/assets/stylesheets/custom.scss */
+  .mobile-py-6 {
+    padding-top: 0rem;
+    padding-bottom: 5.0rem;
+  }
+  /* line 86, app/assets/stylesheets/custom.scss */
+  .video {
+    padding: 60px 30px 60px 30px !important;
+  }
+}
+
+/** Navigation **/
+/* line 93, app/assets/stylesheets/custom.scss */
+.navbar {
+  padding: .5rem 1.0rem;
+}
+
+/* line 96, app/assets/stylesheets/custom.scss */
+.navbar-transparent {
+  background: transparent;
+}
+
+/* line 99, app/assets/stylesheets/custom.scss */
+.nav-link {
+  color: #333333 !important;
+  font-size: 1.1rem;
+}
+
+/* line 103, app/assets/stylesheets/custom.scss */
+.navbar-dark .nav-link {
+  color: #FFFFFF !important;
+}
+
+@media (min-width: 768px) {
+  /* line 107, app/assets/stylesheets/custom.scss */
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1.0rem;
+    padding-left: 1.0rem;
+  }
+}
+
+/* line 112, app/assets/stylesheets/custom.scss */
+.nav-link a {
+  color: #FFFFFF;
+}
+
+/* line 115, app/assets/stylesheets/custom.scss */
+.nav-logo {
+  height: 60px;
+  padding: 0.2rem 0;
+}
+
+/** Footer **/
+/* line 122, app/assets/stylesheets/custom.scss */
+.footer-top p {
+  font-size: 1.0rem;
+  color: #FFFFFF !important;
+  margin-bottom: 0;
+}
+
+/* line 127, app/assets/stylesheets/custom.scss */
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #919eab !important;
+  margin-bottom: 0;
+}
+
+/* line 132, app/assets/stylesheets/custom.scss */
+footer a {
+  color: #919eab !important;
+}
+
+/* line 135, app/assets/stylesheets/custom.scss */
+footer a:hover {
+  color: #FFFFFF !important;
+  transition: color 300ms ease-in-out;
+  text-decoration: underline;
+}
+
+/* line 140, app/assets/stylesheets/custom.scss */
+footer .fab {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+
+/** Backgrounds **/
+/* line 146, app/assets/stylesheets/custom.scss */
+.bg-blue {
+  background-color: #4781c2;
+  color: #FFFFFF;
+}
+
+/* line 150, app/assets/stylesheets/custom.scss */
+.bg-dark-blue {
+  background-color: #02336c;
+  color: #FFFFFF;
+}
+
+/* line 154, app/assets/stylesheets/custom.scss */
+.bg-orange {
+  background-color: #fdc037;
+}
+
+/* line 157, app/assets/stylesheets/custom.scss */
+.bg-green {
+  background-color: #47c288;
+  color: #FFFFFF;
+}
+
+/* line 161, app/assets/stylesheets/custom.scss */
+.bg-red {
+  background-color: #c24781;
+  color: #FFFFFF;
+}
+
+/* line 165, app/assets/stylesheets/custom.scss */
+.bg-grey {
+  background-color: #f4f6f8;
+}
+
+/* line 168, app/assets/stylesheets/custom.scss */
+.card-stripes {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 140px;
+  width: 100%;
+  z-index: 2;
+  transform-origin: 0 0;
+  transform: skewY(-6deg);
+  background: #fff;
+}
+
+/* line 180, app/assets/stylesheets/custom.scss */
+.stripes {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  display: grid;
+  transform: skewY(6deg);
+  transform-origin: 0;
+}
+
+/** Buttons **/
+/* line 191, app/assets/stylesheets/custom.scss */
+.btn {
+  padding: .7rem 1.25rem;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+}
+
+/* line 196, app/assets/stylesheets/custom.scss */
+.btn:active, .btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* line 200, app/assets/stylesheets/custom.scss */
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: none;
+}
+
+/* line 203, app/assets/stylesheets/custom.scss */
+.btn-white {
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+}
+
+/* line 209, app/assets/stylesheets/custom.scss */
+.btn-white:hover, .btn-white:active, .btn-white:not(:disabled):not(.disabled):active, .btn-white.active:not(:disabled):not(.disabled), .show > .btn-white.dropdown-toggle {
+  color: #02336c;
+  background-color: #FFFFFF !important;
+  border: 2px solid #FFFFFF !important;
+  border-radius: 4px;
+}
+
+/* line 215, app/assets/stylesheets/custom.scss */
+.btn-blue {
+  color: #FFFFFF;
+  background-color: #4781c2;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* line 221, app/assets/stylesheets/custom.scss */
+.btn-blue:hover, .btn-bloue:active, .btn-blue:not(:disabled):not(.disabled):active, .btn-blue.active:not(:disabled):not(.disabled), .show > .btn-blue.dropdown-toggle {
+  color: #FFFFFF !important;
+  background-color: #6d9bcf !important;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* line 227, app/assets/stylesheets/custom.scss */
+.btn-purple {
+  color: #FFFFFF;
+  background-color: #4b47c2;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* line 233, app/assets/stylesheets/custom.scss */
+.btn-donate {
+  width: 100%;
+  padding: .75rem .75rem;
+}
+
+/* line 237, app/assets/stylesheets/custom.scss */
+.btn-red {
+  background-color: #c24b47;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* line 243, app/assets/stylesheets/custom.scss */
+.btn-red:hover, .btn-red:active, .btn-red:not(:disabled):not(.disabled):active, .btn-red.active:not(:disabled):not(.disabled), .show > .btn-red.dropdown-toggle {
+  color: #FFFFFF !important;
+  background-color: #cf806d !important;
+  border: 0;
+  border-radius: 4px;
+}
+
+/** Home **/
+/* line 252, app/assets/stylesheets/custom.scss */
+#home-banner {
+  margin-top: 76px;
+}
+
+/* line 255, app/assets/stylesheets/custom.scss */
+.home {
+  height: 600px;
+  background-image: url(/assets/home-18d7c75e37583c983052c31cd071ba9af44d3433f926e6aaa8d79646817a7993.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: -2 !important;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 264, app/assets/stylesheets/custom.scss */
+  .home {
+    height: 600px;
+    background-image: url(/assets/home-18d7c75e37583c983052c31cd071ba9af44d3433f926e6aaa8d79646817a7993.png);
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    z-index: -2 !important;
+    color: #fff;
+  }
+}
+
+/* line 273, app/assets/stylesheets/custom.scss */
+.home-graphic {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+/* line 277, app/assets/stylesheets/custom.scss */
+#home-chicago {
+  background: #fff !important;
+  color: #fff;
+}
+
+/* line 281, app/assets/stylesheets/custom.scss */
+#home-chicago .row {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 285, app/assets/stylesheets/custom.scss */
+  #home-chicago .row {
+    margin-top: 40px;
+  }
+}
+
+/* line 289, app/assets/stylesheets/custom.scss */
+#home-impact .row {
+  margin-top: 40px;
+}
+
+/* line 292, app/assets/stylesheets/custom.scss */
+#home-stories {
+  background: #fff;
+}
+
+/* line 295, app/assets/stylesheets/custom.scss */
+#home-stories .card {
+  min-width: 340px;
+  max-width: 340px;
+}
+
+/* line 299, app/assets/stylesheets/custom.scss */
+.card-footer a {
+  color: #4781c2;
+  font-weight: bold;
+}
+
+/* line 303, app/assets/stylesheets/custom.scss */
+#home-vision .stripes {
+  display: grid;
+  grid: repeat(5, 120px)/repeat(10, 1fr);
+  background: #fff !important;
+  transform: skewY(-4deg) !important;
+  z-index: 0;
+}
+
+/* line 310, app/assets/stylesheets/custom.scss */
+#home-chicago .stripes {
+  display: grid;
+  grid: repeat(5, 160px)/repeat(10, 1fr);
+  background: #02336c !important;
+  transform: skewY(4deg);
+  z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 318, app/assets/stylesheets/custom.scss */
+  #home-chicago .stripes {
+    display: grid;
+    grid: repeat(5, 210px)/repeat(10, 1fr);
+    background: #02336c !important;
+    transform: skewY(4deg);
+    z-index: 0;
+  }
+}
+
+/* line 326, app/assets/stylesheets/custom.scss */
+#home-aaft .stripes {
+  display: grid;
+  grid: repeat(5, 150px)/repeat(10, 1fr);
+  margin-top: 240px;
+  background: #f5f5fc !important;
+  transform: skewY(-4deg) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 334, app/assets/stylesheets/custom.scss */
+  #home-aaft .stripes {
+    display: grid;
+    grid: repeat(5, 180px)/repeat(10, 1fr);
+    margin-top: 240px;
+    background: #f5f5fc !important;
+    transform: skewY(-4deg) !important;
+  }
+}
+
+/* line 342, app/assets/stylesheets/custom.scss */
+.img_preview {
+  width: 100%;
+  height: 225px;
+  border-radius: .25rem .25rem 0 0;
+}
+
+/** Schools **/
+/* line 350, app/assets/stylesheets/custom.scss */
+#schools-title {
+  background: #02336c !important;
+  margin-top: 76px;
+  color: #FFFFFF !important;
+}
+
+/* line 355, app/assets/stylesheets/custom.scss */
+#schools-content .card-footer {
+  padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+}
+
+/* line 358, app/assets/stylesheets/custom.scss */
+#schools-content .card-footer a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/** Donate **/
+/* line 365, app/assets/stylesheets/custom.scss */
+#donate-banner {
+  background-image: url(/assets/sfd_student_1-f43802bd23c219cf6881c67cab6f9ece255acabe46960a02f36f49606cd0ca41.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 76px;
+}
+
+/* line 371, app/assets/stylesheets/custom.scss */
+#donate-content .fa-large {
+  font-size: 2.0rem;
+  color: #4781c2;
+  margin-bottom: 30px;
+}
+
+/** Thanks **/
+/* line 379, app/assets/stylesheets/custom.scss */
+#thanks {
+  margin-top: 76px;
+}
+
+/** Resources **/
+/* line 384, app/assets/stylesheets/custom.scss */
+#resources-title {
+  padding-top: 76px;
+}
+
+/* line 387, app/assets/stylesheets/custom.scss */
+#resources-content p {
+  margin-bottom: 0;
+}
+
+/** About **/
+/* line 393, app/assets/stylesheets/custom.scss */
+#about-title {
+  margin-top: 76px;
+}
+
+/* line 396, app/assets/stylesheets/custom.scss */
+#about-content .stripes {
+  display: grid;
+  grid: repeat(5, 80px)/repeat(10, 1fr);
+  background: #f1efee !important;
+  z-index: 0;
+  transform: skewY(-4deg) !important;
+}
+
+/* line 403, app/assets/stylesheets/custom.scss */
+.spotlight-circles {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+}
+
+/* line 408, app/assets/stylesheets/custom.scss */
+.spotlight-circles-interior {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  height: 0;
+}
+
+/* line 414, app/assets/stylesheets/custom.scss */
+.spotlight-circles-interior::before {
+  bottom: 0;
+  right: 0;
+  width: 33%;
+  height: 33%;
+  background-color: #fdc037;
+}
+
+/* line 421, app/assets/stylesheets/custom.scss */
+.spotlight-circles-interior::before, .spotlight-circles-interior::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+/* line 427, app/assets/stylesheets/custom.scss */
+.spotlight-circles-interior::after {
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 92%;
+  background-color: #02336c;
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* line 435, app/assets/stylesheets/custom.scss */
+.spotlight-circles-content {
+  display: flex;
+  align-items: center;
+  top: 2%;
+  padding-top: 0;
+}
+
+/* line 441, app/assets/stylesheets/custom.scss */
+.spotlight-circles-content {
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 92%;
+  position: absolute;
+  z-index: 10;
+  padding-top: 0;
+}
+
+/* line 450, app/assets/stylesheets/custom.scss */
+.spotlight-circles-content__heading {
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 1.375rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 457, app/assets/stylesheets/custom.scss */
+.spotlight-circles-content__heading strong {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 3.0rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 467, app/assets/stylesheets/custom.scss */
+  .spotlight-circles-content__heading {
+    font-size: 1.2rem;
+  }
+  /* line 470, app/assets/stylesheets/custom.scss */
+  .spotlight-circles-content__heading strong {
+    font-size: 2.0rem;
+  }
+}
+
+/* line 474, app/assets/stylesheets/custom.scss */
+#about-partners img {
+  width: 100%;
+}
+
+/* line 477, app/assets/stylesheets/custom.scss */
+#about-card .fa-large {
+  font-size: 2.0rem;
+  color: #4781c2;
+  margin-bottom: 30px;
+}
+
+/** Programs **/
+/* line 485, app/assets/stylesheets/custom.scss */
+#programs-banner {
+  padding-top: 76px;
+}
+
+/* line 488, app/assets/stylesheets/custom.scss */
+#programs-video {
+  background: #f5f5fc;
+}
+
+/* line 491, app/assets/stylesheets/custom.scss */
+.underline:after {
+  background: #4781c2;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  height: 4px;
+  width: 96px;
+}
+
+/** Why CPS **/
+/* line 505, app/assets/stylesheets/custom.scss */
+#why-title {
+  padding-top: 76px;
+}
+
+/* line 508, app/assets/stylesheets/custom.scss */
+#why-news .card-body {
+  padding-bottom: 50px;
+}
+
+/* line 511, app/assets/stylesheets/custom.scss */
+#why-news .card-footer {
+  position: relative;
+  padding-top: 70px;
+}
+
+/* line 515, app/assets/stylesheets/custom.scss */
+#why-news .card-img {
+  border-radius: 50%;
+  position: absolute;
+  max-width: 100px;
+  top: -50px;
+  margin-left: -50px;
+  left: 50%;
+}
+
+/* line 523, app/assets/stylesheets/custom.scss */
+.video {
+  padding: 60px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 527, app/assets/stylesheets/custom.scss */
+  #why-news .underline:after {
+    background: #4781c2;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    height: 4px;
+    width: 96px;
+  }
+  /* line 537, app/assets/stylesheets/custom.scss */
+  .video {
+    padding: 60px 30px 60px 30px !important;
+  }
+}
+
+/** Contact **/
+/* line 545, app/assets/stylesheets/custom.scss */
+#contacts-content {
+  margin-top: 76px;
+}
+
+/* line 548, app/assets/stylesheets/custom.scss */
+.contact-hidden {
+  display: none;
+}
+
+/** Blog **/
+/* line 553, app/assets/stylesheets/custom.scss */
+#blog-title {
+  margin-top: 76px;
+  color: #FFFFFF !important;
+}
+
+/* line 557, app/assets/stylesheets/custom.scss */
+#blog-content .card {
+  min-width: 340px;
+  max-width: 340px;
+}
+
+/** Recruitment **/
+/* line 563, app/assets/stylesheets/custom.scss */
+#recruitment-title {
+  padding-top: 76px;
+}
+
+/* line 566, app/assets/stylesheets/custom.scss */
+#recruitment-logos img {
+  width: 100%;
+}
+
+/* line 569, app/assets/stylesheets/custom.scss */
+.job-thumb {
+  width: 1.0rem;
+  padding-bottom: 4px;
+}
+
+/* line 573, app/assets/stylesheets/custom.scss */
+.job-pic-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
